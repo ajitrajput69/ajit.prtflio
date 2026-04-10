@@ -1,0 +1,98 @@
+:root {
+    --bg: #0f172a;
+    --text: #ffffff;
+    --accent: #38bdf8;
+}
+
+.light {
+    --bg: #ffffff;
+    --text: #000000;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar span {
+    color: var(--accent);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 10px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+}
+
+/* Skills */
+.skill {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.bar {
+    background: #333;
+    height: 10px;
+}
+
+.bar div {
+    background: var(--accent);
+    height: 10px;
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #1e293b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent);
+}
+
+/* Animation */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
